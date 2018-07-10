@@ -72,7 +72,7 @@ db.notes.updateMany({"_id": {$lte: ObjectId("000000000000000000000003")}}, {$uns
 // 24.  Write a MongoDB query to remove the document from the collection notes that has an _id "000000000000000000000017".
 db.notes.deleteOne({"_id": ObjectId("000000000000000000000017")});
 
-// 25. Write a MongoDB query to remove the documents from the collection notes that have an _id which is not less than "000000000000000000000018".
+// 25. Write a MongoDB query to remove the documents from the collection notes that have an _id which is not less than "000000000000000000000017".
 db.notes.deleteMany({"_id": {$not: {$lt: ObjectId("000000000000000000000017")}}});
 
 // 26.  Write a MongoDB query to remove the documents from the collection notes that have an _id which is greater than or equal to "000000000000000000000013" and contain the string 'dogs' in the title.
